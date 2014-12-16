@@ -37,8 +37,8 @@ namespace HelloWorldMVC.Controllers
             string customer;
             using (AdventureWorksEntities e = new AdventureWorksEntities())
             {
-                customer = (from cust in e.Person
-                           select cust.FirstName).FirstOrDefault().ToString();
+                customer = (from cust in e.SalesOrderHeader
+                           select cust.CustomerID).FirstOrDefault().ToString();
 
             }
 
