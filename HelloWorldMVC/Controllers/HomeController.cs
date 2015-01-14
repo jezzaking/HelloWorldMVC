@@ -53,7 +53,7 @@ namespace HelloWorldMVC.Controllers
 
         public ActionResult TestGrid()
         {
-            ViewBag.Message = "People List";
+            ViewBag.Message = "";
             return View();
         }
 
