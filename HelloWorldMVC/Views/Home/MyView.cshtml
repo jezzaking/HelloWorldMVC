@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "MyView";
+    ViewBag.Title = "AnglularJS";
 }
 
 <hgroup class="title">
@@ -7,52 +7,18 @@
     <h2>@ViewBag.Message</h2>
 </hgroup>
 
-<h3>Telerik UI for ASP.NET MVC TabStrip</h3>
-<br />
+<h3>AngularJK Playground</h3>
+<div ng-app="">
+    <p>Name: <input type="text" ng-model="name"></p>
+    <p ng-bind="name"></p>
+    <p></p>
+    <p>My first expression, what is 5+5?: {{ 5 + 5 }}</p>
+</div>
 
-    @(Html.Kendo().TabStrip()
-        .Name("ContactsTabStrip")
-        .Items(items =>
-        {
-            items.Add()
-                .Text("Phone")
-                .Selected(true)
-                .Content(@<text>
-                    <p>
-                        <span class="label">Main:</span>
-                        <span>425.555.0100</span>
-                    </p>
-                    <p>
-                        <span class="label">After Hours:</span>
-                        <span>425.555.0199</span>
-                    </p>
-                </text>)
-                .ContentHtmlAttributes(new { style = "min-height: 200px" });
-            items.Add()
-                .Text("Email")
-                .Content(@<text>
-                    <p>
-                        <span class="label">Support:</span>
-                        <span><a href="mailto:Support@example.com">Support@example.com</a></span>
-                    </p>
-                    <p>
-                        <span class="label">Marketing:</span>
-                        <span><a href="mailto:Marketing@example.com">Marketing@example.com</a></span>
-                    </p>
-                    <p>
-                        <span class="label">General:</span>
-                        <span><a href="mailto:General@example.com">General@example.com</a></span>
-                    </p>
-                </text>)
-                .ContentHtmlAttributes(new { style = "min-height: 200px" });
-            items.Add()
-                .Text("Address")
-                .Content(@<text>
-                    <p>
-                        One Microsoft Way<br />
-                        Redmond, WA 98052-6399
-                    </p>
-                </text>)
-                .ContentHtmlAttributes(new { style = "min-height: 200px" });
-        })
-    )
+
+<br />
+@*@(Html.Kendo().Grid()
+    .Name("testGrid")
+    .BindTo()*@
+
+<br />

@@ -13,20 +13,22 @@
 	<script src="@Url.Content("~/Scripts/kendo/2014.3.1119/kendo.all.min.js")"></script>
 	<script src="@Url.Content("~/Scripts/kendo/2014.3.1119/kendo.aspnetmvc.min.js")"></script>
 	<script src="@Url.Content("~/Scripts/kendo.modernizr.custom.js")"></script>
+        <script src="@Url.Content("~/Scripts/angular.min.js")"></script>
 </head>
     <body>
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                    <p class="site-title">@Html.ActionLink("Jeremy Test Site", "Index", "Home")</p>
                 </div>
                 <div class="float-right">
                     <nav>
                         <ul id="menu">
                             <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("AngularJS", "MyView", "Home")</li>
+                            <li>@Html.ActionLink("Kendo Grid", "TestGrid", "Home")</li>
                             <li>@Html.ActionLink("About", "About", "Home")</li>
                             <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                            <li>@Html.ActionLink("Whatever", "MyView", "Home")</li>
                         </ul>
                     </nav>
                 </div>
