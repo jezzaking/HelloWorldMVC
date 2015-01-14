@@ -9,17 +9,12 @@
 
 <h3>AngularJK Playground</h3>
 <div ng-app="">
-    <p>Name: <input type="text" ng-model="name"></p>
-    <p ng-bind="name"></p>
-    <p></p>
-    <p>My first expression, what is 5+5?: {{ 5 + 5 }}</p>
+    <p>First Name: <input type="text" ng-model="firstname"></p>
+    <p>Last Name: <input type="text" ng-model="lastname"></p>
+
+    <p>With ng-bind: <span ng-bind="firstname"></span></p>
+    <p>With an expression:1 {{ firstname + " " + lastname }}</p>
     
 </div>
-
-
-<br />
-@*@(Html.Kendo().Grid()
-    .Name("testGrid")
-    .BindTo()*@
 
 <br />
