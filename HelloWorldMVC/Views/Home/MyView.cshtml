@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Anglular JS";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<h3>AngularJK Playground</h3>
+<div ng-app="">
+    <p>First Name1: <input type="text" ng-model="firstname"></p>
+    <p>Last Name: <input type="text" ng-model="lastname"></p>
+
+    <p>With ng-bind: <span ng-bind="firstname"></span></p>
+    <p>With an expression: {{ firstname + " " + lastname }}</p>
+    
+</div>
+
+<br />
